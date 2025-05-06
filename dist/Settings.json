@@ -1,0 +1,75 @@
+{
+  "window": {
+    "width": 600,
+    "height": 450,
+    "x": 100,
+    "y": 100
+  },
+  "shortcut": {
+    "start": "Ctrl+Alt+L"
+  },
+  "behavior": {
+    "autoExitWaitAfterAction": true,
+    "showBalloon": false,
+    "showStartupBalloon": true,
+    "balloonTimeout": 1000
+  },
+  "browser": {
+    "type": "edge",
+    "aiUrl": "https://chat.openai.com/"
+  },
+  "ui": {
+    "fontSize": 12,
+    "fontFamily": "BIZ UDGothic"
+  },
+  "log": {
+    "level": "Debug",
+    "maxFileSize": 512000,
+    "directory": "logs",
+    "fileName": "app.log"
+  },
+  "uiTexts": {
+    "appTitle": "登録ショートカット実行ツール",
+    "waitModeStart": "実行待ちモード開始",
+    "waitModeEnd": "バックグラウンド待機モードに戻ります",
+    "actionExecuted": "アクション実行",
+    "settingsReloaded": "設定を再読み込みしました",
+    "error": {
+      "settingsLoad": "設定ファイルの読み込みに失敗しました",
+      "templateLoad": "テンプレートファイルの読み込みに失敗しました",
+      "clipboardEmpty": "クリップボードにテキストがありません"
+    }
+  },
+  "actions": {
+    "Ctrl+Alt+F1": {
+      "type": "prompt",
+      "templateFile": "templates/summary.txt",
+      "displayName": "要約",
+      "description": "テキストを要約するプロンプトの生成"
+    },
+    "Ctrl+Alt+F2": {
+      "type": "prompt",
+      "templateFile": "templates/research.txt",
+      "displayName": "調査",
+      "description": "調査タスクのプロンプトの生成"
+    },
+    "Ctrl+Alt+F3": {
+      "type": "prompt",
+      "templateFile": "templates/code_request_python.txt",
+      "displayName": "Pythonソース製作依頼",
+      "description": "Pythonコードを作成するプロンプトの生成"
+    },
+    "Ctrl+Alt+P": {
+      "type": "prompt",
+      "templateFile": "templates/prompt_generation.txt",
+      "displayName": "プロンプト作成",
+      "description": "生成AI用のプロンプトを作成します"
+    },
+    "Ctrl+Alt+G": {
+      "type": "open",
+      "value": "https://www.google.com",
+      "displayName": "Google HP",
+      "description": "Googleホームページを開きます"
+    }
+  }
+} 
